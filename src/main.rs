@@ -12,8 +12,6 @@ fn main() {
     let mut history_path = get_cache_dir(args.verbose);
     history_path.push("history");
 
-    dbg!(&history_path);
-
     match args.action {
         Action::Register => {
             save_entry(
